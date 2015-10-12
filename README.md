@@ -3,4 +3,4 @@ Marcus Dev Starter Kit
 
 Susy, Breakpoint, Compass, Normalize
 
-http://i.imgur.com/ERqSzdZ.gif
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
