@@ -1,0 +1,68 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+// Importing Susy 
+@import "normalize";
+@import "compass";
+@import "susy";
+@import "breakpoint";
+
+// Configuring Susy Defaults
+$susy: (
+  columns: 1 2 3 2 1,
+  output: isolate,
+  debug: (image: show)
+  );
+
+
+  .wrap {
+  @include container(1140px);
+}
+
+.sidebar-one {
+  @include span(1 first);
+}
+
+.sidebar-two {
+  @include span(1 last)
+}
+
+.content {
+  @include span(3 at 2);
+}
+
+.nest-one {
+  @include span(1 of (2 3 2) first);
+}
+
+.nest-two {
+  @include span(2 of (2 3 2) last);
+}
+
+// Demo CSS 
+
+.wrap {
+  height: 100vh
+}
+
+.sidebar-one, .sidebar-two {
+  background: aquamarine; 
+  height: 40vh;
+}
+
+.nest-one,.nest-two {
+  background: LavenderBlush; 
+  height: 40vh;
+}
+
+.content {
+  background: DarkTurquoise; 
+  height: 80vh;
+}
+
+h2 {
+  text-align: center;
+}
